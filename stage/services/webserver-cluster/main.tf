@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "webserver_cluster" {
-  source = "../../../modules/services/webserver-cluster"
+  source = "github.com/allan8362/modules//webserver-cluster?ref=v0.0.2"
 
   cluster_name            = "webservers-stage"
   db_remote_state_bucket  = "adb8362-terraform-up-and-running-state"
